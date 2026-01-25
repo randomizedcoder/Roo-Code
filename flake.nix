@@ -16,6 +16,8 @@
 #   pnpm build           # Build the project
 #   pnpm test            # Run tests
 #   pnpm vsix            # Create VS Code extension
+#   eslint <file>        # Lint files (eslint and eslint_d available)
+#   pnpm lint            # Run linting via pnpm scripts
 #
 # Maintenance:
 #   nix run .#update-deps   # Update flake.lock and pnpmDeps hash
@@ -159,6 +161,8 @@
               ripgrep
               jp2a
               nodePackages.typescript-language-server
+              nodePackages.eslint
+              nodePackages.eslint_d
               nil
             ]
             ++ lib.optionals stdenv.isLinux [
