@@ -41,6 +41,9 @@ logs
 # Turborepo
 .turbo
 
+# Nix
+flake.lock
+
 # IntelliJ and Qodo plugin folders
 .idea/
 .qodo/
